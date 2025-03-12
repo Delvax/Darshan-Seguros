@@ -26,6 +26,7 @@ p {
 }
 /* Fin Estilos generales */
 
+
 /* comienza Menu responsive */
 
 .abrir-menu{
@@ -48,6 +49,7 @@ p {
         background-color: var(--primary-color);
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        z-index: 1000; /* Asegura que el menú esté por encima */
 
     }
     .nav-list{
@@ -108,11 +110,10 @@ p {
 
 /* Comienza hero */
 .hero {
-background: rgb(0,60,113);
-background: -moz-linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(55,122,180,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(55,122,180,1) 100%);
-background: linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(55,122,180,1) 100%);
-/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003c71",endColorstr="#377ab4",GradientType=1); */
+    background: rgb(0,60,113);
+    background: -moz-linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(55,122,180,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(55,122,180,1) 100%);
+    background: linear-gradient(90deg, rgba(0,60,113,1) 0%, rgba(55,122,180,1) 100%);
     padding: 80px 20px;
     position: relative;
 }
