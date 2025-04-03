@@ -1,0 +1,73 @@
+
+// Marquesina de marcas de aseguradoras
+
+.marquee-container {
+    margin-top:5rem ;
+    overflow: hidden;
+    white-space: nowrap;
+    background: white;
+    padding: 10px;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-content img {
+    width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+
+// fin de Marquesina de marcas de aseguradoras
+
+// Inicio de beneficios
+
+.beneficios {
+    text-align: center;
+    padding: 20px;
+}
+
+.fila-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.beneficio {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.beneficio i {
+    font-size: 3rem; /* Tamaño de los iconos */
+    color: var(--primary-color); /* Color de los iconos */
+    margin-bottom: 10px;
+}
+
+.beneficio h3 {
+    margin-bottom: 5px;
+}
+
+// Fin de beneficios

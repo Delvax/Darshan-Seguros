@@ -1,0 +1,38 @@
+
+.darshan-menu{
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.nav-link {
+    color: var(--primary-color);
+}
+.nav-link:hover {
+    color: var(--highlight-color);
+}
+
+.btn-darshan{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-darshan-primary{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-darshan-primary:hover{
+    color: var(--text-light);
+    border-color: var(--highlight-color);
+    background-color: var(--accent-color);
+}
+
+.btn-darshan-secundary{
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-darshan-secundary:hover{
+    color: var(--text-light);
+    border-color: var(--highlight-color);
+    background-color: var(--accent-color)
+}
