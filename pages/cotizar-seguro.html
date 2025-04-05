@@ -32,8 +32,8 @@
                     <li><a href="../index.html" class="nav-link px-2">Home</a></li>
                     <li><a href="../pages/seguros.html" class="nav-link px-2">Seguros</a></li>
                     <li><a href="../pages/cotizar-seguro.html" class="nav-link px-2">Cotizar Seguro</a></li>
-                    <li><a href="pages/nosotros.html" class="nav-link px-2">Nosotros</a></li>
-                    <li><a href="pages/nosotros" class="nav-link px-2">Contacto</a></li>
+                    <li><a href="../pages/nosotros.html" class="nav-link px-2">Nosotros</a></li>
+                    <li><a href="../pages/contacto.html" class="nav-link px-2">Contacto</a></li>
                   </ul>
                 </nav>
               </div>
@@ -48,7 +48,55 @@
     <main>
       
     <!-- <img class="img-cotiza-seguros" src="../assets/img/cotiza-seguros.jpg" alt=""> -->
-    <h1 class="display-5 fw-bold py-5 titulo-h1">Cotizá tu seguro al instante</h1><br>
+    <div class="hero-cotizar-seguros">
+      <h1 class="display-5 fw-bold py-5 titulo-h1 h1-darshan">Cotizá tu seguro al instante</h1><br>
+
+      <div class="container col-xxl-8">
+        <div class="row flex-lg-row-reverse align-items-center">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <p class="lead">Nos pondremos en contacto a la brevedad</p>
+              <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido"></label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono"></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Numero de Contacto" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                </div>
+                <div class="form-group">
+                    <label>Seguro de Interés:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="auto" name="interes" value="auto">
+                        <label for="auto">Auto</label>
+                        <input type="checkbox" id="salud" name="interes" value="salud">
+                        <label for="salud">Salud</label>
+                        <input type="checkbox" id="tecnologia" name="interes" value="tecnologia">
+                        <label for="tecnologia">Tecnología</label>
+                        <input type="checkbox" id="vida" name="interes" value="vida">
+                        <label for="vida">Vida</label>
+                    </div>
+                </div>
+              
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn-darshan-secundary">Cotizar online</button>
+            
+              </form>
+          </div>
+          <!-- otro bloque -->
+          <div class="col-lg-6">
+            <img src="../assets/img/cotice-seguros.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div> 
 
 
     <!-- final de seguros -->
@@ -72,7 +120,7 @@
 
     <!-- inicio de beneficios -->
     <section class="container beneficios">
-      <h2 class="display-5 fw-bold py-5">Cotizá tu seguro al instante</h2><br>
+      <h2 class="display-5 fw-bold py-5 h1-darshan">Porque deberias elegirnos</h2><br>
       <div class="fila-beneficios">
           <div class="beneficio">
               <i class="bi bi-shield-check"></i>
