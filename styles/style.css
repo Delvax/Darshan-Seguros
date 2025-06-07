@@ -203,16 +203,35 @@ input[type=email] {
   .nav-list li a {
     color: var(--text-light);
   }
-  
 }
 .img-seguros {
-  width: 600px;
+  max-width: 100%;
   height: 400px;
 }
 
 .img-cotiza-seguros {
   width: 100%;
   height: 50%;
+}
+
+.caricatura-darshan {
+  max-width: 100%;
+  height: 400px;
+}
+
+.logotipo-principal {
+  width: 300px;
+  height: 50px;
+}
+
+.logotipo-footer {
+  width: 300px;
+  height: 250px;
+}
+
+.contacto-asesor {
+  width: 100%;
+  height: 400px;
 }
 
 .cotizar-ahora {
@@ -405,10 +424,6 @@ input[type=email] {
   color: var(--text-light);
   border-color: var(--highlight-color);
   background-color: var(--accent-color);
-}
-
-.menu-navegacion {
-  background-color: blue;
 }
 
 /* Icon features */
