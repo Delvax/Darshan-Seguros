@@ -203,6 +203,7 @@ input[type=email] {
   .nav-list li a {
     color: var(--text-light);
   }
+  
 }
 .img-seguros {
   width: 600px;
