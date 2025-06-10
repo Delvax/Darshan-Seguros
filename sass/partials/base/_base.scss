@@ -1,14 +1,16 @@
 // Estilos Generales
 
 body {
-    font-family: var(--font-primary);
+  font-family: $font-primary;
 }
 
 h1, h2 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Semi-bold */
+  font-family: $font-primary; // Podrías definir esto como un mixin de tipografía
+  font-weight: 600; /* Semi-bold */
 }
 
 p {
-    font-weight: 400; /* Regular */
+  font-weight: 400; /* Regular */
 }
+
+

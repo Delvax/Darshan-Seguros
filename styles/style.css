@@ -1,20 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
-body {
-  font-family: var(--font-primary);
-}
-
-h1, h2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600; /* Semi-bold */
-}
-
-p {
-  font-weight: 400; /* Regular */
-}
-
-/* Importar la tipografia Poppins des de Google Fonts */
 :root {
   --primary-color: #003C71; /* Azul oscuro */
   --secondary-color: #0E4779; /* Azul medio */
@@ -27,6 +13,28 @@ p {
   --font-primary: "Poppins", sans-serif;
 }
 
+/* Azul oscuro */
+/* Azul medio */
+/* Dorado claro */
+/* Dorado oscuro */
+/* Beige claro */
+/* Azul grisáceo */
+/* Blanco */
+/* Negro (opcional si necesitas texto oscuro) */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Semi-bold */
+}
+
+p {
+  font-weight: 400; /* Regular */
+}
+
+/* Importar la tipografia Poppins des de Google Fonts */
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
@@ -79,8 +87,8 @@ p {
 }
 
 .beneficio i {
-  font-size: 3rem; /* Tamaño de los iconos */
-  color: var(--primary-color); /* Color de los iconos */
+  font-size: 3rem; /* Tamaño de los iconos, considera una variable si es común */
+  color: #003C71; /* Color de los iconos */
   margin-bottom: 10px;
 }
 
@@ -157,7 +165,7 @@ input[type=email] {
 }
 
 .espacio {
-  margin-bottom: 100px; /* Separa los elementos verticalmente */
+  margin-bottom: 100px;
 }
 
 /* GALERY */
@@ -191,17 +199,17 @@ input[type=email] {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--primary-color);
+    background-color: #003C71;
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Asegura que el menú esté por encima */
+    z-index: 1000;
   }
   .nav-list {
     flex-direction: column;
     align-items: end;
   }
   .nav-list li a {
-    color: var(--text-light);
+    color: #FFFFFF;
   }
 }
 .img-seguros {
@@ -275,12 +283,12 @@ input[type=email] {
 }
 
 .title-hero {
-  color: var(--text-light);
+  color: #FFFFFF;
   font-weight: 600;
 }
 
 .subtitle-hero {
-  color: var(--background-dark);
+  color: #B2C3CF;
   font-weight: 400;
 }
 
@@ -306,13 +314,13 @@ input[type=email] {
 
 #footer-Content .copyright {
   margin-top: 125px;
-  border-top: 1px solid var(--accent-color);
+  border-top: 1px solid #C1A867;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
 #footer-Content .copyright p {
-  color: var(--background-dark);
+  color: #B2C3CF;
   font-size: 18px;
 }
 
@@ -333,7 +341,7 @@ input[type=email] {
 }
 
 #footer-Content .widget .subscribe-area input[type=email] {
-  background: var(--background-dark);
+  background: #B2C3CF;
   border: 1px solid #fff;
   color: #e2e2e2;
   font-size: 14px;
@@ -346,9 +354,9 @@ input[type=email] {
   right: 0;
   width: 60px;
   height: 38px;
-  color: var(--background-light);
+  color: #EAE5D8;
   top: 0;
-  background: var(--accent-color);
+  background: #C1A867;
   display: block;
   padding: 9px 20px;
   font-size: 18px;
@@ -378,7 +386,7 @@ input[type=email] {
 }
 
 #footer-Content ul.menu li a:hover {
-  color: var(--accent-color);
+  color: #C1A867;
   padding-left: 5px;
   -webkit-transition: all 300ms;
   -o-transition: all 300ms;
@@ -391,45 +399,45 @@ input[type=email] {
 }
 
 .nav-link {
-  color: var(--primary-color);
+  color: #003C71;
 }
 
 .nav-link:hover {
-  color: var(--highlight-color);
+  color: #9D760E;
 }
 
 .btn-darshan {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: #003C71;
+  border-color: #003C71;
 }
 
 .btn-darshan-primary {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: #003C71;
+  border-color: #003C71;
 }
 
 .btn-darshan-primary:hover {
-  color: var(--text-light);
-  border-color: var(--highlight-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  border-color: #9D760E;
+  background-color: #C1A867;
 }
 
 .btn-darshan-secundary {
-  color: var(--text-light);
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: #FFFFFF;
+  background-color: #003C71;
+  border-color: #003C71;
 }
 
 .btn-darshan-secundary:hover {
-  color: var(--text-light);
-  border-color: var(--highlight-color);
-  background-color: var(--accent-color);
+  color: #FFFFFF;
+  border-color: #9D760E;
+  background-color: #C1A867;
 }
 
 /* Icon features */
 .bi {
   font-size: 65px;
-  color: var(--primary-color);
+  color: #003C71;
 }
 
 /*# sourceMappingURL=style.css.map */

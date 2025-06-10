@@ -1,6 +1,6 @@
 /* Icon features */
 
 .bi {
-    font-size: 65px;
-    color: var(--primary-color);
+  font-size: 65px; // Podrías crear una variable para este font-size
+  color: $primary-color;
 }

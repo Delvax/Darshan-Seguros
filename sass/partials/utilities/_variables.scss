@@ -9,3 +9,90 @@
     --text-dark: #000000; /* Negro (opcional si necesitas texto oscuro) */
     --font-primary: 'Poppins', sans-serif;
 }
+
+
+// Colores primarios y de acento
+$primary-color: #003C71;       /* Azul oscuro */
+$secondary-color: #0E4779;      /* Azul medio */
+$accent-color: #C1A867;         /* Dorado claro */
+$highlight-color: #9D760E;      /* Dorado oscuro */
+
+// Colores de fondo
+$background-light: #EAE5D8;    /* Beige claro */
+$background-dark: #B2C3CF;     /* Azul grisáceo */
+$background-hero-start: rgb(0, 60, 113); // Color de inicio del gradiente del hero
+$background-hero-end: rgb(55, 122, 180);   // Color de fin del gradiente del hero
+$background-form-focus: #e5fff3; // Color de fondo del input al enfocar
+
+// Colores de texto
+$text-light: #FFFFFF;          /* Blanco */
+$text-dark: #000000;           /* Negro (opcional si necesitas texto oscuro) */
+$text-footer-widget: #e2e2e2; // Color de texto para widgets del footer
+$text-footer-copyright: #ddd; // Color de texto para el copyright del footer
+
+// Tipografía
+$font-primary: "Poppins", sans-serif;
+
+
+// Espaciado y dimensiones
+$margin-bottom-default: 15px; // Para .form-group
+$margin-bottom-beneficio: 20px;
+$margin-bottom-hero-padding: 40px;
+$margin-bottom-gap-espacio: 100px;
+$margin-top-gap-espacio: 100px;
+$padding-marquee: 10px;
+$padding-beneficios: 20px;
+$padding-caja: 20px;
+$padding-hero-section: 80px 20px;
+$padding-footer-top: 130px;
+$padding-footer-copyright-top: 30px;
+$padding-footer-copyright-bottom: 30px;
+$padding-footer-subscribe-icon: 9px 20px;
+$padding-darshan-menu: 15px;
+
+// Border-radius
+$border-radius-input: 4px;
+$border-radius-caja: 8px;
+$border-radius-footer-subscribe-icon: 0px 4px 4px 0px;
+$border-radius-hero-after: 50% 50% 0 0;
+
+// Sombras y bordes
+$box-shadow-caja: 0 0 10px rgba(0, 0, 0, 0.1);
+$box-shadow-float-hover-primary: 0 8px 8px 0 #003C71;
+$box-shadow-float-hover-secondary: 0 8px 8px 0 #000000;
+$box-shadow-navegacion-mobile: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+$border-input: 1px solid #003C71;
+$border-footer-copyright: 1px solid $accent-color;
+$border-footer-subscribe-input: 1px solid #fff;
+
+
+// Transiciones y animaciones
+$transition-float: 0.5s, color 0.1s;
+$transition-footer-menu-link: all 300ms;
+$animation-marquee-duration: 15s;
+
+// Anchos y altos
+$width-input-text: calc(100% - 12px);
+$width-marquee-img: 120px;
+$height-marquee-img: 80px;
+$width-beneficio: 200px;
+$width-img-cotiza-seguros: 100%;
+$width-logotipo-principal: 300px;
+$width-logotipo-footer: 300px;
+$width-contacto-asesor: 100%;
+$height-img-seguros: 400px;
+$height-img-cotiza-seguros: 50%;
+$height-caricatura-darshan: 400px;
+$height-logotipo-principal: 50px;
+$height-logotipo-footer: 250px;
+$height-contacto-asesor: 400px;
+$height-hero-after: 60px;
+$height-footer-subscribe-area: 40px;
+$height-footer-subscribe-input: 38px;
+$height-footer-subscribe-icon: 38px;
+
+// Z-index
+$z-index-navegacion-mobile: 1000;
+
+// Media Queries (valores numéricos que pueden ser variables)
+$breakpoint-mobile: 970px;

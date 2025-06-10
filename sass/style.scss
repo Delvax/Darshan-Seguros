@@ -1,12 +1,12 @@
-// BASE
-@import 'partials/base/base';
-@import 'partials/base/reset';
-@import 'partials/base/tipografia';
-
 // UTILITIES
 @import 'partials/utilities/variables';
 @import 'partials/utilities/maps';
 @import 'partials/utilities/mixins';
+
+// BASE
+@import 'partials/base/base';
+@import 'partials/base/reset';
+@import 'partials/base/tipografia';
 
 // COMPONENTS
 

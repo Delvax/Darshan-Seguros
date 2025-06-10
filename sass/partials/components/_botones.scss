@@ -3,22 +3,24 @@
 
 // Boton de cotizar ahora 
 
-.cotizar-ahora{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-bottom: 20px;
+.cotizar-ahora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; 
 }
+
 // Animacion           
-.float{
-    transition: .5s, color .10s;
-    -webkit-transition: .5s, color .10s;
-    -moz-transition: .5s, color .10s;
+
+.float {
+  transition: $transition-float;
+  -webkit-transition: $transition-float;
+  -moz-transition: $transition-float;
 }
-.float:hover{
-    box-shadow: 0 8px 8px 0 #003C71,0 8px 8px 0 #000000;
-    transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
-    -moz-transform:translate(0px,5px);
+
+.float:hover {
+  box-shadow: $box-shadow-float-hover-primary, $box-shadow-float-hover-secondary;
+  transform: translate(0px, 5px); // Podrías crear una variable para este transform
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
 }
-              
