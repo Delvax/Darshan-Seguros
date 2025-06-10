@@ -1,82 +1,83 @@
 
-#footer-Content {
+
+.footer-content { // CAMBIADO de #footer-Content a .footer-content
   padding-top: $padding-footer-top;
   background: $background-hero-start; // Usa la variable de color del hero
 }
 
-#footer-Content .footer-logo img {
-  padding-left: 10px; // Podrías crear una variable para este padding
+.footer-content .footer-logo img { 
+  padding-left: 10px; 
 }
 
-#footer-Content .form-control:focus {
+.footer-content .form-control:focus { 
   outline: none;
   box-shadow: none;
   background: $background-form-focus;
 }
 
-#footer-Content .copyright {
-  margin-top: 125px; // Podrías crear una variable para este margen
+.footer-content .copyright { 
+  margin-top: 125px; 
   border-top: $border-footer-copyright;
   padding-top: $padding-footer-copyright-top;
   padding-bottom: $padding-footer-copyright-bottom;
 }
 
-#footer-Content .copyright p {
-  color: $background-dark; // similar a subtitle-hero, considera si es una variable de texto o fondo
-  font-size: 18px; // Podrías crear una variable para este font-size
+.footer-content .copyright p { 
+  color: $background-dark; 
+  font-size: 18px; 
 }
 
-#footer-Content .copyright a {
+.footer-content .copyright a { 
   color: $text-footer-copyright;
 }
 
-#footer-Content .widget p {
+.footer-content .widget p { 
   color: $text-footer-widget;
-  font-size: 16px; // Podrías crear una variable para este font-size
-  line-height: 32px; // Podrías crear una variable para este line-height
+  font-size: 16px; 
+  line-height: 32px; 
 }
 
-#footer-Content .widget .subscribe-area {
+.footer-content .widget .subscribe-area { 
   position: relative;
   height: $height-footer-subscribe-area;
-  margin-top: 18px; // Podrías crear una variable para este margen
+  margin-top: 18px; 
 }
 
-#footer-Content .widget .subscribe-area input[type=email] {
+.footer-content .widget .subscribe-area input[type=email] { 
   background: $background-dark;
   border: $border-footer-subscribe-input;
-  color: $text-footer-widget; // Reutilizando la variable de texto del widget
-  font-size: 14px; // Podrías crear una variable para este font-size
+  color: $text-footer-widget; 
+  font-size: 14px; 
   font-style: italic;
   height: $height-footer-subscribe-input;
 }
 
-#footer-Content .widget .subscribe-area span i {
+.footer-content .widget .subscribe-area span i { 
   position: absolute;
   right: 0;
-  width: 60px; // Podrías crear una variable para este ancho
+  width: 60px; 
   height: $height-footer-subscribe-icon;
-  color: $background-light; // El color del icono podría ser una variable de texto
+  color: $background-light; 
   top: 0;
   background: $accent-color;
   display: block;
   padding: $padding-footer-subscribe-icon;
-  font-size: 18px; // Podrías crear una variable para este font-size
+  font-size: 18px; 
   border-radius: $border-radius-footer-subscribe-icon;
 }
 
-#footer-Content h3.block-title {
-  color: #fff; // Podrías usar $text-light o $color-white
-  font-size: 20px; // Podrías crear una variable para este font-size
+.footer-content h3.block-title { 
+  color: $text-light; 
+  font-size: 20px; 
   font-weight: 600;
-  margin-bottom: 30px; // Podrías crear una variable para este margen
+  margin-bottom: 30px; 
 }
 
-#footer-Content ul.menu li a {
-  color: $text-footer-widget; // Reutilizando la variable de texto del widget
-  font-size: 16px; // Podrías crear una variable para este font-size
+.footer-content ul.menu li a { 
+  color: $text-footer-widget; 
+  font-size: 16px; 
   font-weight: 400;
-  line-height: 32px; // Podrías crear una variable para este line-height
+  line-height: 32px; 
   text-decoration: none;
   -webkit-transition: $transition-footer-menu-link;
   -o-transition: $transition-footer-menu-link;
@@ -87,9 +88,9 @@
   list-style: none;
 }
 
-#footer-Content ul.menu li a:hover {
+.footer-content ul.menu li a:hover { 
   color: $accent-color;
-  padding-left: 5px; // Podrías crear una variable para este padding
+  padding-left: 5px; 
   -webkit-transition: $transition-footer-menu-link;
   -o-transition: $transition-footer-menu-link;
   transition: $transition-footer-menu-link;
