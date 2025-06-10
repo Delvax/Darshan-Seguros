@@ -1,0 +1,80 @@
+// _mixins.scss
+
+// 1. Mixin para estilos de Tipografía
+// Permite establecer el peso y la familia de la fuente de manera consistente.
+@mixin font-style($weight: 400, $family: $font-primary) {
+  font-family: $family;
+  font-weight: $weight;
+}
+
+// 2. Mixins para Estilos de Botones
+// Base para los estilos de un botón.
+@mixin button-base($text-color, $border-color, $bg-color: transparent) {
+  color: $text-color;
+  border-color: $border-color;
+  background-color: $bg-color;
+  display: inline-block; // Asegura que el botón se comporte como un bloque en línea
+  padding: 8px 15px;    // Padding básico para botones, puedes ajustarlo
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;   // Radio de borde básico para botones, puedes ajustarlo
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease; // Transición suave para todos los cambios
+}
+
+// Estilos de hover para botones.
+@mixin button-hover($hover-text-color: $text-light, $hover-border-color: $highlight-color, $hover-bg-color: $accent-color) {
+  &:hover {
+    color: $hover-text-color;
+    border-color: $hover-border-color;
+    background-color: $hover-bg-color;
+  }
+}
+
+// 3. Mixin para efecto "float" de hover (sombra y traslación)
+@mixin float-effect($shadow-color-1: $primary-color, $shadow-color-2: $text-dark, $transform-y: 5px) {
+  transition: 0.5s, color 0.1s; // Puedes ajustar las duraciones de transición
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
+
+  &:hover {
+    box-shadow: 0 8px 8px 0 $shadow-color-1, 0 8px 8px 0 $shadow-color-2;
+    transform: translate(0px, $transform-y);
+    -webkit-transform: translate(0px, $transform-y);
+    -moz-transform: translate(0px, $transform-y);
+  }
+}
+
+// 4. Mixin para estilos de texto "Darshan"
+@mixin darshan-text($color: $primary-color, $align: initial) {
+  color: $color;
+  @if $align != initial { // Solo aplica text-align si se proporciona un valor
+    text-align: $align;
+  }
+}
+
+// 5. Mixin para tamaños de imagen
+@mixin image-size($width: auto, $height: auto, $object-fit: initial) {
+  width: $width;
+  height: $height;
+  @if $object-fit != initial {
+    object-fit: $object-fit;
+  }
+}
+
+// 6. Mixin para transiciones suaves (genérico)
+@mixin smooth-transition($duration: 300ms, $properties: all) {
+  transition: $properties $duration;
+  -webkit-transition: $properties $duration;
+  -o-transition: $properties $duration;
+}
+
+// 7. Mixin para Media Queries (puntos de ruptura)
+// Puedes añadir más si tienes diferentes breakpoints.
+@mixin desktop-down {
+  @media screen and (max-width: $breakpoint-mobile) {
+    @content; // @content permite que el contenido del mixin se inyecte aquí
+  }
+}

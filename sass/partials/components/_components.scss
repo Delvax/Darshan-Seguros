@@ -4,7 +4,7 @@
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
-  background: white; // Podrías crear una variable $color-white si lo usas mucho
+  background: white; 
   padding: $padding-marquee;
   position: relative;
   display: flex;
@@ -18,10 +18,8 @@
 }
 
 .marquee-content img {
-  width: $width-marquee-img;
-  height: $height-marquee-img;
-  object-fit: contain;
-  margin: 0 20px; // Podrías crear una variable para este margen
+  @include image-size($width-marquee-img, $height-marquee-img, contain);
+  margin: 0 20px;
 }
 
 @keyframes marquee {
@@ -37,7 +35,7 @@
   animation-play-state: paused;
 }
 
-// fin de Marquesina de marcas de aseguradoras
+// Fin de Marquesina de marcas de aseguradoras
 
 // Inicio de beneficios
 
@@ -59,9 +57,9 @@
 }
 
 .beneficio i {
-  font-size: 3rem; /* Tamaño de los iconos, considera una variable si es común */
-  color: $primary-color; /* Color de los iconos */
-  margin-bottom: 10px; 
+  font-size: 3rem; 
+  color: $primary-color; 
+  margin-bottom: 10px;
 }
 
 .beneficio h3 {
@@ -73,7 +71,7 @@
 // hero de hero-cotizar-seguros.html
 
 .hero-cotizar-seguros {
-  background-color: hsl(205, 38%, 91%); // Mantengo HSL ya que no es una variable definida
+  background-color: hsl(205, 38%, 91%); 
   padding-bottom: $margin-bottom-hero-padding;
 }
 
@@ -93,14 +91,14 @@
 
 label {
   display: block;
-  margin-bottom: 5px; // Podrías crear una variable para este margen
+  margin-bottom: 5px; 
 }
 
 input[type=text],
 input[type=tel],
 input[type=email] {
   width: $width-input-text;
-  padding: 8px; // Podrías crear una variable para este padding
+  padding: 8px; 
   border-radius: $border-radius-input;
   border: 1px solid $primary-color;
 }
@@ -111,22 +109,22 @@ input[type=email] {
 }
 
 .checkbox-group label {
-  margin-right: 15px; // Podrías crear una variable para este margen
-  margin-left: 10px; // Podrías crear una variable para este margen
+  margin-right: 15px; 
+  margin-left: 10px; 
   display: inline-block;
 }
 
 // titulos generales
 
 .h1-darshan {
-  color: $primary-color;
+  @include darshan-text(); 
 }
 
 .h3-darshan {
-  color: $primary-color;
-  text-align: center;
+  @include darshan-text($align: center); 
 }
 
 .p-darshan {
-  text-align: center;
+  @include darshan-text($align: center); 
 }
+

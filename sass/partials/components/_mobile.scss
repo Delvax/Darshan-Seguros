@@ -1,20 +1,22 @@
-
 @media screen and (max-width: $breakpoint-mobile) {
-  .navegacion {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: $primary-color;
-    padding: 2rem; // Podrías crear una variable para este padding
-    box-shadow: $box-shadow-navegacion-mobile;
-    z-index: $z-index-navegacion-mobile;
-  }
-  .nav-list {
-    flex-direction: column;
-    align-items: end;
-  }
-  .nav-list li a {
-    color: $text-light;
+
+  @include desktop-down {
+    .navegacion {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $primary-color;
+      padding: 2rem;
+      box-shadow: $box-shadow-navegacion-mobile;
+      z-index: $z-index-navegacion-mobile;
+    }
+    .nav-list {
+      flex-direction: column;
+      align-items: end;
+    }
+    .nav-list li a {
+      color: $text-light;
+    }
   }
 }

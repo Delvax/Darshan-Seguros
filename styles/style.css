@@ -1,18 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
-:root {
-  --primary-color: #003C71; /* Azul oscuro */
-  --secondary-color: #0E4779; /* Azul medio */
-  --accent-color: #C1A867; /* Dorado claro */
-  --highlight-color: #9D760E; /* Dorado oscuro */
-  --background-light: #EAE5D8; /* Beige claro */
-  --background-dark: #B2C3CF; /* Azul grisáceo */
-  --text-light: #FFFFFF; /* Blanco */
-  --text-dark: #000000; /* Negro (opcional si necesitas texto oscuro) */
-  --font-primary: "Poppins", sans-serif;
-}
-
 /* Azul oscuro */
 /* Azul medio */
 /* Dorado claro */
@@ -21,17 +7,21 @@
 /* Azul grisáceo */
 /* Blanco */
 /* Negro (opcional si necesitas texto oscuro) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css");
 body {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 h1, h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600; /* Semi-bold */
+  font-weight: 600;
 }
 
 p {
-  font-weight: 400; /* Regular */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 /* Importar la tipografia Poppins des de Google Fonts */
@@ -87,8 +77,8 @@ p {
 }
 
 .beneficio i {
-  font-size: 3rem; /* Tamaño de los iconos, considera una variable si es común */
-  color: #003C71; /* Color de los iconos */
+  font-size: 3rem;
+  color: #003C71;
   margin-bottom: 10px;
 }
 
@@ -147,6 +137,7 @@ input[type=email] {
 }
 
 .p-darshan {
+  color: #003C71;
   text-align: center;
 }
 
@@ -193,7 +184,7 @@ input[type=email] {
   margin-bottom: 100px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 970px) and (max-width: 970px) {
   .navegacion {
     position: fixed;
     top: 0;
@@ -213,8 +204,9 @@ input[type=email] {
   }
 }
 .img-seguros {
-  max-width: 100%;
+  width: 100%;
   height: 400px;
+  object-fit: cover;
 }
 
 .img-cotiza-seguros {
@@ -223,8 +215,9 @@ input[type=email] {
 }
 
 .caricatura-darshan {
-  max-width: 100%;
+  width: 100%;
   height: 400px;
+  object-fit: cover;
 }
 
 .logotipo-principal {
@@ -409,13 +402,32 @@ input[type=email] {
 .btn-darshan {
   color: #003C71;
   border-color: #003C71;
+  background-color: transparent;
+  display: inline-block;
+  padding: 8px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn-darshan-primary {
   color: #003C71;
   border-color: #003C71;
+  background-color: transparent;
+  display: inline-block;
+  padding: 8px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
 .btn-darshan-primary:hover {
   color: #FFFFFF;
   border-color: #9D760E;
@@ -424,10 +436,18 @@ input[type=email] {
 
 .btn-darshan-secundary {
   color: #FFFFFF;
-  background-color: #003C71;
   border-color: #003C71;
+  background-color: #003C71;
+  display: inline-block;
+  padding: 8px 15px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
 .btn-darshan-secundary:hover {
   color: #FFFFFF;
   border-color: #9D760E;

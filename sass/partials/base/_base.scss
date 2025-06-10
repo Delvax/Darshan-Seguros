@@ -1,16 +1,14 @@
 // Estilos Generales
 
 body {
-  font-family: $font-primary;
+  @include font-style(); // Usa el valor por defecto: $font-primary y weight 400
 }
 
 h1, h2 {
-  font-family: $font-primary; // Podrías definir esto como un mixin de tipografía
-  font-weight: 600; /* Semi-bold */
+  @include font-style(600); // Usa $font-primary y weight 600
 }
 
 p {
-  font-weight: 400; /* Regular */
+  @include font-style(400); // Usa $font-primary y weight 400
 }
-
 

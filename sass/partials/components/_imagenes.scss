@@ -2,36 +2,29 @@
 // Imagenes seccion seguros.html
 
 .img-seguros {
-  max-width: 100%;
-  height: $height-img-seguros;
+  @include image-size(100%, $height-img-seguros, cover); // Asumo cover por la imagen
 }
 
 .img-cotiza-seguros {
-  width: $width-img-cotiza-seguros;
-  height: $height-img-cotiza-seguros;
+  @include image-size($width-img-cotiza-seguros, $height-img-cotiza-seguros);
 }
-
 
 // Imagenes seccion index.html
 
 .caricatura-darshan {
-  max-width: 100%;
-  height: $height-caricatura-darshan;
+  @include image-size(100%, $height-caricatura-darshan, cover); // Asumo cover
 }
 
 .logotipo-principal {
-  width: $width-logotipo-principal;
-  height: $height-logotipo-principal;
+  @include image-size($width-logotipo-principal, $height-logotipo-principal);
 }
 
 .logotipo-footer {
-  width: $width-logotipo-footer;
-  height: $height-logotipo-footer;
+  @include image-size($width-logotipo-footer, $height-logotipo-footer);
 }
 
 // Imagenes seccion contacto.html
 
 .contacto-asesor {
-  width: $width-contacto-asesor;
-  height: $height-contacto-asesor;
+  @include image-size($width-contacto-asesor, $height-contacto-asesor);
 }
